@@ -1,0 +1,32 @@
+==14756==
+==14756== HEAP SUMMARY:
+==14756==     in use at exit: 48 bytes in 7 blocks
+==14756==   total heap usage: 110 allocs, 103 frees, 4,111 bytes allocated
+==14756==
+==14756== 12 bytes in 1 blocks are definitely lost in loss record 1 of 3
+==14756==    at 0x4C2AB28: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==14756==    by 0x404BFB: Student::enrollCourse(int) (in /home/cs/tuna.dalbeler/CSHW1/a.out)
+==14756==    by 0x4037D4: RegistrationSystem::addCourse(int, int, std::string) (in /home/cs/tuna.dalbeler/CSHW1/a.out)
+==14756==    by 0x40190B: main (in /home/cs/tuna.dalbeler/CSHW1/a.out)
+==14756==
+==14756== 12 bytes in 1 blocks are definitely lost in loss record 2 of 3
+==14756==    at 0x4C2AB28: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==14756==    by 0x404BFB: Student::enrollCourse(int) (in /home/cs/tuna.dalbeler/CSHW1/a.out)
+==14756==    by 0x4037D4: RegistrationSystem::addCourse(int, int, std::string) (in /home/cs/tuna.dalbeler/CSHW1/a.out)
+==14756==    by 0x401A6F: main (in /home/cs/tuna.dalbeler/CSHW1/a.out)
+==14756==
+==14756== 24 bytes in 5 blocks are definitely lost in loss record 3 of 3
+==14756==    at 0x4C2AB28: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==14756==    by 0x404E0C: Student::withdrawCourse(int) (in /home/cs/tuna.dalbeler/CSHW1/a.out)
+==14756==    by 0x403CC1: RegistrationSystem::cancelCourse(int) (in /home/cs/tuna.dalbeler/CSHW1/a.out)
+==14756==    by 0x401C16: main (in /home/cs/tuna.dalbeler/CSHW1/a.out)
+==14756==
+==14756== LEAK SUMMARY:
+==14756==    definitely lost: 48 bytes in 7 blocks
+==14756==    indirectly lost: 0 bytes in 0 blocks
+==14756==      possibly lost: 0 bytes in 0 blocks
+==14756==    still reachable: 0 bytes in 0 blocks
+==14756==         suppressed: 0 bytes in 0 blocks
+==14756==
+==14756== For counts of detected and suppressed errors, rerun with: -v
+==14756== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
